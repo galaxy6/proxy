@@ -11,7 +11,7 @@ from collections import deque
 
 class Protect(object):
 	'''
-	程序出现错误或退出后，保护进程检测到会杀死错误进程并重启新的进程
+	程序出现错误或退出后，保护进程检测到错误进程进行杀死后并重启新的进程
 	'''
 	
 	def __init__(self):
