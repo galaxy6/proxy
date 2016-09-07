@@ -33,7 +33,7 @@ class Protect(object):
 			else:
 				keys.append(0)
 		value = reduce(lambda x,y:x+y,keys)
-		current = (time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(time.time())))
+		current = time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(time.time()))
 		if value == 0:
 			subprocess.Popen('python task.py',shell=True)
 			print "%s Program has been reset..."%current
