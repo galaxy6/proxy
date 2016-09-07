@@ -10,7 +10,7 @@ def http_request_get(url, timeout=timeout, headers=header):
 	try:
 		response = requests.get(url, timeout=timeout, headers=header)
 		if response.status_code == 200:
-			if response.text:
+			if hasattr(response.text,"text"):
 				return response.text
 			else:
 				return response.content
