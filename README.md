@@ -20,7 +20,7 @@
 
 ##Usage
 
-Usage:  python task.py
+  Usage: python task.py
 	
-        python protect.py
+         python protect.py
         
